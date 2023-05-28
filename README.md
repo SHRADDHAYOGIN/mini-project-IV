@@ -85,7 +85,7 @@ Created a data preparation and modeling pipeline to streamline the process.
 Integrated data cleaning, feature engineering, and modeling steps into a cohesive workflow.
 Deployed the Model:
 
-Deployed the model on a local platform for accessibility.
+Deployed the model on a local platform and AWS instence for accessibility.
 
 Testing Process:
 
@@ -101,16 +101,32 @@ Best Score: 0.8145949288806431
 
 2.Accuracy of model is  0.7723577235772358.
 
-3.url to local machine for model is http://127.0.0.1:5000/status.
+3.Here is live url to cloud for model is http://ec2-18-191-195-203.us-east-2.compute.amazonaws.com:5555/status.
+
+with body of 
+
+{
+    "Gender": "Male",
+    "Married": "No",
+    "Dependents": "2",
+    "Education": "Graduate",
+    "Self_Employed": "No",
+    "ApplicantIncome": 5849.0,
+    "CoapplicantIncome": 0.0,
+    "LoanAmount": 146.4121621622,
+    "Loan_Amount_Term": 360.0,
+    "Credit_History": 0.0,
+    "Property_Area": "Urban"
+}
+
 
 4  .![alt text](images/postman.png)
 
 ## Challanges 
-Deployment Constraint: Unfortunately, there was an issue while deploying the model on the cloud due to space limitations. This prevented us from making the model accessible for real-world loan prediction scenarios.
+Deployment Constraint: There was an issue while deploying the model on the cloud due to space limitations.Need to update volume size.
 
 Time Constraints: Given the limited timeframe for the project, there was a need to work efficiently and quickly. This posed a challenge in terms of allocating sufficient time to each stage of the process.
 
 ## Future Goals
-Cloud Deployment: Moving forward, it is a priority to resolve the space error and successfully deploy the model on a cloud platform. This will enable seamless accessibility and utilization of the model for loan approval predictions.
 
 Enhanced EDA and Feature Engineering: To further improve the project, dedicating more time and effort to the exploratory data analysis (EDA) phase will provide deeper insights into the dataset. Additionally, investing in more comprehensive feature engineering techniques will help derive more meaningful and predictive variables.
